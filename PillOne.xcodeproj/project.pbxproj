@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E442B5900C83B6D98618FC6 /* Pods_PillOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA109CC94A06D7F86E066E6C /* Pods_PillOne.framework */; };
+		FA0426C41D2A57BF00C7E580 /* Pill.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0426C31D2A57BF00C7E580 /* Pill.swift */; };
+		FAE3F9FC1D253B040016E29E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAE3F9FB1D253B040016E29E /* GoogleService-Info.plist */; };
 		FAEC7C801D253696004D5135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC7C7F1D253696004D5135 /* AppDelegate.swift */; };
 		FAEC7C821D253696004D5135 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEC7C811D253696004D5135 /* ViewController.swift */; };
 		FAEC7C851D253696004D5135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAEC7C831D253696004D5135 /* Main.storyboard */; };
@@ -15,6 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		785970D6B478F2FCB56467BD /* Pods-PillOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PillOne/Pods-PillOne.debug.xcconfig"; sourceTree = "<group>"; };
+		8F0DB8992DBB6FA1088F3C5B /* Pods-PillOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PillOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-PillOne/Pods-PillOne.release.xcconfig"; sourceTree = "<group>"; };
+		BA109CC94A06D7F86E066E6C /* Pods_PillOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PillOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0426C31D2A57BF00C7E580 /* Pill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pill.swift; sourceTree = "<group>"; };
+		FAE3F9FB1D253B040016E29E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAEC7C7C1D253696004D5135 /* PillOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PillOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEC7C7F1D253696004D5135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAEC7C811D253696004D5135 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +37,57 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E442B5900C83B6D98618FC6 /* Pods_PillOne.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3944D30B064FEE69570F5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA109CC94A06D7F86E066E6C /* Pods_PillOne.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5633CC3B7C43C01F610E3B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				785970D6B478F2FCB56467BD /* Pods-PillOne.debug.xcconfig */,
+				8F0DB8992DBB6FA1088F3C5B /* Pods-PillOne.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA0426C21D2A57B500C7E580 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA0426C31D2A57BF00C7E580 /* Pill.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		FAC18C721D2642140089F7CD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				FAEC7C7F1D253696004D5135 /* AppDelegate.swift */,
+				FAE3F9FB1D253B040016E29E /* GoogleService-Info.plist */,
+				FAEC7C861D253697004D5135 /* Assets.xcassets */,
+				FAEC7C881D253697004D5135 /* LaunchScreen.storyboard */,
+				FAEC7C8B1D253697004D5135 /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		FAEC7C731D253696004D5135 = {
 			isa = PBXGroup;
 			children = (
 				FAEC7C7E1D253696004D5135 /* PillOne */,
 				FAEC7C7D1D253696004D5135 /* Products */,
+				E5633CC3B7C43C01F610E3B9 /* Pods */,
+				A3944D30B064FEE69570F5C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +102,10 @@
 		FAEC7C7E1D253696004D5135 /* PillOne */ = {
 			isa = PBXGroup;
 			children = (
-				FAEC7C7F1D253696004D5135 /* AppDelegate.swift */,
+				FA0426C21D2A57B500C7E580 /* Model */,
+				FAC18C721D2642140089F7CD /* Support */,
 				FAEC7C811D253696004D5135 /* ViewController.swift */,
 				FAEC7C831D253696004D5135 /* Main.storyboard */,
-				FAEC7C861D253697004D5135 /* Assets.xcassets */,
-				FAEC7C881D253697004D5135 /* LaunchScreen.storyboard */,
-				FAEC7C8B1D253697004D5135 /* Info.plist */,
 			);
 			path = PillOne;
 			sourceTree = "<group>";
@@ -71,9 +117,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAEC7C8E1D253697004D5135 /* Build configuration list for PBXNativeTarget "PillOne" */;
 			buildPhases = (
+				CC05E051B6F2012D8FA1B802 /* [CP] Check Pods Manifest.lock */,
 				FAEC7C781D253696004D5135 /* Sources */,
 				FAEC7C791D253696004D5135 /* Frameworks */,
 				FAEC7C7A1D253696004D5135 /* Resources */,
+				60478F2F762E876035284414 /* [CP] Embed Pods Frameworks */,
+				2C7B9D1D319E64924FE179C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,17 +173,67 @@
 			files = (
 				FAEC7C8A1D253697004D5135 /* LaunchScreen.storyboard in Resources */,
 				FAEC7C871D253697004D5135 /* Assets.xcassets in Resources */,
+				FAE3F9FC1D253B040016E29E /* GoogleService-Info.plist in Resources */,
 				FAEC7C851D253696004D5135 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2C7B9D1D319E64924FE179C1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PillOne/Pods-PillOne-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60478F2F762E876035284414 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PillOne/Pods-PillOne-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC05E051B6F2012D8FA1B802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAEC7C781D253696004D5135 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0426C41D2A57BF00C7E580 /* Pill.swift in Sources */,
 				FAEC7C821D253696004D5135 /* ViewController.swift in Sources */,
 				FAEC7C801D253696004D5135 /* AppDelegate.swift in Sources */,
 			);
@@ -247,6 +346,7 @@
 		};
 		FAEC7C8F1D253697004D5135 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785970D6B478F2FCB56467BD /* Pods-PillOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PillOne/Info.plist;
@@ -258,6 +358,7 @@
 		};
 		FAEC7C901D253697004D5135 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F0DB8992DBB6FA1088F3C5B /* Pods-PillOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PillOne/Info.plist;
@@ -286,6 +387,7 @@
 				FAEC7C901D253697004D5135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

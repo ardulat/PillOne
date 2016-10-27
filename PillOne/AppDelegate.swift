@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import Firebase
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let APP_ID = "74DC26B1-7B18-3248-FFF0-E1B9F3E3D200"
+    let SECRET_KEY = "DDFDBC84-3E8C-8DB4-FFC3-08F171748F00"
+    let VERSION_NUM = "v1"
+    
+    var backendless = Backendless.sharedInstance()
+    
+    override init() {
+        FIRApp.configure()
+    }
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        backendless.initApp(APP_ID, secret:SECRET_KEY, version:VERSION_NUM)
         return true
     }
 
