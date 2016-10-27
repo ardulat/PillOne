@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Pill: NSObject {
+    var objectId: String?
+    var name: String?
+    var purpose: String?
+    var prohibition: String?
+    var activeComponents: String?
+    var price: Int = 0
+    var change: Int = 0
+}
