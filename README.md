@@ -1,3 +1,6 @@
-# PillOne
+PillOne
+=======
 
-This is an iOS application used to parse drugs from a website for the Auyrma app. You can find Auyrma app repo on my profile.
+Parsing drugs and storing to database
+
+This is an iOS application used to parse drugs from a website and store it in the Backendless database for the [Auyrma](https://github.com/ardulat/Auyrma) iOS application.
